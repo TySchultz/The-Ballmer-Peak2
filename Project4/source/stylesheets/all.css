@@ -25,31 +25,40 @@ h2.header{
     padding-top: 0px;
     margin-top: 0px;
 }
+
 #page {
     margin-top: 8%;
     position: relative;
 }
 #header {
+    width: 10%;
     display: block;
     float: left;
     margin-bottom: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    position: relative;
+    margin-left: 0%;
+    margin-right: 5%;
+    position: absolute;
 }
 
 #content {
     clear: both;
     display: block;
-    margin-left: 10%;
+    margin-left: 15%;
     margin-right: 10%;
     padding-bottom: 5%;
+    padding-top: 5%;
     position: relative;
 }
+
+#fullbleed {
+    clear: both;
+    width: 100%;
+}
+
 #nav {
     display: block;
     float: left;
-    left: -13px;
+    left: 37px;
     position: relative;
     top: 1px;
 }
@@ -61,10 +70,12 @@ h2.header{
     font-size: 36pt;
     left: -2px;
     letter-spacing: 1px;
-    line-height: 16pt;
+    line-height: 7pt;
     margin-bottom: 0px;
     margin-right: 40px;
+    margin-top: 0px;
     position: relative;
+    padding-top: 0px;
     text-decoration: none;
 }
 #logo:active {
@@ -113,6 +124,10 @@ a.normal {
 a.header {
     color: #FC9A24;
     
+}
+
+ul {
+    margin: 0px;
 }
 
 li {
