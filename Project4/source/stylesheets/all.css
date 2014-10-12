@@ -145,7 +145,7 @@ li {
 
 .leftColumn, .rightColumn, footer, header { padding: 1.25em;  }
 
-.leftColumn { margin-bottom: 20.5em; }
+.leftColumn { margin-bottom: 20.5em; width: 15em;}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 40.5em ) {
