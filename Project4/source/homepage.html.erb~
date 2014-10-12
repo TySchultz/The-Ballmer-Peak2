@@ -4,109 +4,11 @@
   <meta charset="UTF-8">
   <title>Prasun Sinha Associate Professor</title>
   <link rel="stylesheet" href="/stylesheets/all.css">
-    <style>
-
-        .info
-        {
-            font-family: "Times New Roman";
-            font-size: 20px;
-            color: black;
-            background: white;
-
-        }
-        .photo
-        {
-
-        }
-        .link-button
-        {
-            height: 50px;
-            background: #660000;
-        }
-
-        .link-button:hover
-        {
-            height: 50px;
-            background: #481212;
-        }
-        .link-dummy
-        {
-            height: 50px;
-            background: #660000;
-        }
-
-        .link-dummy-end
-        {
-            height: 800px;
-            background: #660000;
-        }
-        .links-table
-        {
-            background: #595959;
-            font-size: 150%;
-            font-family: verdana;
-            text-align: center ;
-
-        }
-        #content
-        {
-
-
-        }
-        .home-table
-        {
-            background: white;
-        }
-
-        .title
-        {
-            font-size: 3em;
-            background:#656565 ;
-            padding: 25px ;
-            color: white;
-
-
-        }
-
-        /* unvisited link */
-         a:link {
-            color: #EBEBEB;
-        }
-
-        /* visited link */
-        a:visited {
-            color: #EBEBEB;
-        }
-
-        /* mouse over link */
-        a:hover {
-            color: #B2B2B2;
-        }
-
-        /* selected link */
-        a:active {
-            color: #EBEBEB;
-        }
-
-        .info a:link
-        {
-            color: black;
-        }
-
-        .info a:visited
-        {
-            color: gray;
-        }
-
-
-
-
-
-    </style>
+   
 
 </head>
 
-<body style="background: gray">
+<body>
 <div id="page">
   <%= partial "navigation" %>
   <div id="content">
@@ -114,82 +16,7 @@
 
     <table class="home-table" border="0" align="center" width="1000px"  >
 
-      <tr>
-        <td colspan="3" height="100px" >
-          <div class="title"   >  Prasun Sinha <span style="font-size: 50%">Associate Professor</span>    </div>
-
-
-        </td>
-
-      </tr>
-      <tr>
-        <td rowspan="2" width="250px"  >
-          <div class="links-table"  >
-
-            <table border="0"  width="100%"  >
-              <tr >
-                <td height="50px">
-                  <a href="whatsNew.html"><div class="link-button"   >What is New?</div></a>
-                </td>
-              </tr>
-              <tr >
-                <td height="50px">
-                  <a href="url"><div class="link-button" >About me</div> </a>
-                </td>
-              </tr>
-              <tr >
-                <td height="50px">
-                  <a href="url"><div class="link-button" >Research</div></a>
-                </td>
-              </tr>
-              <tr >
-                <td  height="50px">
-                  <a href="url"><div class="link-button" >Research Group</div> </a>
-                </td>
-              </tr>
-              <tr >
-                <td height="50px">
-                  <a href="coursesPage.html"><div class="link-button" >Teaching</div></a>
-                </td>
-              </tr >
-              <tr >
-                <td height="50px">
-                  <a href="linksPage.html"><div class="link-button" >Miscellaneous links</div></a>
-                </td>
-              <tr align="center">
-                <td class="link-dummy">
-
-                </td>
-              <tr align="center">
-                <td class="link-dummy" >
-
-                </td>
-              <tr align="center">
-                <td class="link-dummy">
-
-                </td>
-              <tr align="center">
-                <td class="link-dummy">
-
-                </td>
-
-
-
-
-
-              <tr align="center">
-                <td class="link-dummy-end" >
-
-                </td>
-
-              </tr>
-            </table>
-
-          </div>
-
-        </td>
-
-      </tr>
+      
       <tr>
         <td valign="top" ><img class="photo" src="images/prasun-cropped.jpg" alt="Picture of Prasun Sinha"   height="200px"  > </td>
         <td  valign="top">
