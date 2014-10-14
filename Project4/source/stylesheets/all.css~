@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+body {
+  padding-left: 11em;
+  font-family: 'Open Sans', sans-serif; font-weight: 100; 
+  color: black;
+  background-color: white;
+  font-size: 100%;
+  position: relative;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif; font-weight: 400; 
+    padding-bottom: 0px;
+    margin-bottom: 0px
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif; font-weight: 100; 
+}
+
+h2.header{
+    font-family: 'Open Sans', sans-serif; font-weight: 100; 
+    font-size: 12px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+#page {
+    margin-top: 8%;
+    position: relative;
+}
+#header {
+    width: 10%;
+    display: block;
+    float: left;
+		left: 10px;
+    margin-bottom: 20px;
+    margin-left: 0%;
+    margin-right: 20%;
+		padding-right: 5px;
+    position: absolute;
+}
+
+#content {
+    clear: both;
+    display: block;
+    margin-left: 25%;
+    margin-right: 10%;
+    padding-bottom: 5%;
+		padding-left:25%;
+    padding-top: 5%;
+    position: relative;
+}
+
+#fullbleed {
+    clear: both;
+    width: 100%;
+}
+
+#nav {
+    display: block;
+    float: left;
+    left: 15px;
+    position: relative;
+		padding-right: 10px;
+    top: 1px;
+}
+#logo {
+    color: #444;
+    display: block;
+    float: left;
+    font-family: 'Open Sans', sans-serif; font-weight: 100; 
+    font-size: 36pt;
+    left: -2px;
+    letter-spacing: 1px;
+    line-height: 7pt;
+    margin-bottom: 0px;
+    margin-right: 40px;
+    margin-top: 0px;
+    position: relative;
+    padding-top: 0px;
+    text-decoration: none;
+}
+#logo:active {
+    background: none repeat scroll 0 0 transparent;
+}
+
+#nav a {
+    border-radius: 50px;
+    color: #444;
+    display: block;
+    float: left;
+    font-family: 'Open Sans', sans-serif; font-weight: 100; 
+    font-size: 14pt;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 16pt;
+    margin-top: 4px;
+    padding: 4px 11px;
+    position: relative;
+    text-decoration: none;
+    text-transform: lowercase;
+    top: 1px;
+}
+
+h1 {
+    color: #888;
+    font-family: msr300;
+    font-size: 0.75em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+a {
+    color: #ff0051;
+    font-family: 'Open Sans', sans-serif; font-weight: 100; 
+    text-decoration: none;
+}
+
+a.normal {
+    color: #ff0051;
+    
+}
+
+a.header {
+    color: #FC9A24;
+    
+}
+
+ul {
+    margin: 0px;
+}
+
+li {
+    padding: 1px;
+    margin: 1px;
+}
