@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-
-
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
@@ -15,17 +13,17 @@ body {
   position: relative;
 }
 
-h1{
+h1 {
     font-family: 'Open Sans', sans-serif; font-weight: 400; 
     padding-bottom: 0px;
-    margin-bottom: 0px
+    margin-bottom: 0px;
 }
 
-h2{
-    font-family: 'Open Sans', sans-serif; font-weight: 100; 
+h2 {
+    font-family: 'Open Sans', sans-serif; font-weight: 100;
 }
 
-h2.header{
+h2.header {
     font-family: 'Open Sans', sans-serif; font-weight: 100; 
     font-size: 12px;
     padding-top: 0px;
@@ -141,15 +139,22 @@ li {
 }
 
 
-.columnsContainer, footer, header { position: relative; margin: .5em; }
+.columnsContainer, footer, header {
+	position: relative; 
+	margin: .5em; 
+}
 
-.leftColumn, .rightColumn, footer, header { padding: 1.25em;  }
+.leftColumn, .rightColumn, footer, header {
+	padding: 1.25em;
+}
 
-.leftColumn { margin-bottom: 20.5em; width: 15em;}
+.leftColumn {
+	margin-bottom: 20.5em;
+	width: 15em;
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 40.5em ) {
   .leftColumn { left: 0; top: 0; width:15.5em;}
-
-    .rightColumn { position: absolute; top: 0; margin-top: 5em; margin-right: 5em;  margin-left: 15.0em; }   
+  .rightColumn { position: absolute; top: 0; margin-top: 5em; margin-right: 5em;  margin-left: 15.0em; }   
 }
