@@ -59,8 +59,7 @@ h2.header {
 #logo {
     color: #444;
     display: block;
-    float: left;
-
+    float: right;
     font-family: 'Open Sans', sans-serif; font-weight: 100; 
     font-size: 36pt;
     letter-spacing: 1px;
