@@ -1,100 +1,78 @@
-<!DOCTYPE html>
-<html>
-<head>
-        <meta charset="UTF-8">
-        <title>Title of the document</title>
-        <link rel="stylesheet" href="/stylesheets/all.css">
-</head>
-
-<body>
-
-  <div class="columnsContainer">
-
-      <div class="leftColumn">
-         <%=  partial "navigation" %>
-      </div>
-
-      <div class="rightColumn">
-        <h1>Research</h1>
-        <br/><p>
-        My research focuses on developing alogorithmic solutions to foundational problems in wireless networking. My recent contributions have been focused along the following avenues (click <a href="http://web.cse.ohio-state.edu/~prasun/prasun_research_statement.pdf">here</a> for a detailed research statement):
-        <br/>
-        <ol>
-        <li><b>Empowering Network Access Protocols with Physical Layer Capabilities</b><br/>
-        Availability of software-defined-radio (SDR) platforms has made it possible to exploit Physical layer capabilities in MAC and higher layers of the network protocol stack. We are investigating fundamental paradigm shifts in medium-access-control protocol design that leverage such capabilities.
-        <br/>
-        <ul>
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/mobicom14-bbn.pdf">BBN: Throughput Scaling in Dense Enterprise WLANs with Blind Beamforming and Nulling</a>, MOBICOM 2014
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/mobicom13-symphony.pdf">Symphony: Cooperative Packet Recovery over the Wired Backbone in Enterprise WLANs</a>, MOBICOM 2013
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/hotmobile14_robinhood.pdf">RobinHood: Sharing the Happiness in a Wireless Jungle</a>, HotMobile 2014
-        <li> <a href="http://dl.acm.org/ft_gateway.cfm?id=2535401&ftid=1415580&dwn=1&CFID=406749014&CFTOKEN=41455512">DOMINO: Relative Scheduling in Enterprise Wireless LANs</a>, CoNEXT 2013
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/icnp13_rctc.pdf">RCTC: Rapid Concurrent Transmission Coordination in Full Duplex Wireless Networks</a>, ICNP 2013
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/mobicom11-duplex.pdf">Practical, Real-time Full Duplex Wireless</a>, MOBICOM 2011
-        </ul>
-        <li><b>Vehicles as First Class Citizens of Tomorrow's Internet</b><br/>
-        We are exploring a wide variety of fundamental problems related to vehicle-to-infrastructure (V2I) communication and vehicle-to-vehicle (V2V) communication.
-        <ul>
-        <li> Ensuring Predictable Contact Opportunity for Scalable Vehicular Internet Access On the Go, TON 2014
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/infocom14-foresight.pdf">ForeSight: Mapping Vehicles in Visual Domain and Electronic Domain and Electronic Domain</a>, INFOCOM 2014
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/journal/tmc13_rbtp.pdf">RBTP: Low Power Mobile Discovery Protocol through Recursive Binary Time Partitioning</a>, TMC 2014
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/mobicom12.pdf">MARVEL: Multiple Antenna based Relative Vehicle Localizer</a>, MOBICOM 2012
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/mobicom12-demo.pdf">Demo Abstract: MARVEL: Multiple Antenna based Relative Vehicle Localizer</a>, MOBICOM 2012
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/infocom10_contact.pdf">Maximizing the Contact Opportunity for Vehicular Internet Access</a>, INFOCOM 2010
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/infocom09_trap.pdf">Trap Coverage: Bounding the Interconnection Gap for Vehicular Internet Access</a>, INFOCOM 2009
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/infocom09_alpha.pdf">Alpha Coverage: Bounding the Interconnection Gap for Vehicular Internet Access</a>, INFOCOM Mini-Conference 2009
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/demo/sensys09-demo.pdf">Demo Abstract: An Affordable, Long-Lasting, and Autonomous Theft Detection and Tracking System</a>, SENSYS 2009
-        </ul>
-        <li><b>Smart Use of Renewable Energy: Networking and Beyond</b><br/>
-        The need to operate perpetually in remote deployments and to reduce the carbon footprint of communication devices, a number of new applications of renewable energy have recently emerged. My work has explored the challenges and the potential of harnessing the renewable energy in the most efficient way for sensor networks and smart grids.
-        <br/>
-        <ul>
-        <li> <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=06195775">A Simple Asymptotically Optimal Joint Energy Allocation and Routing Scheme in Rechargeable Sensor Networks</a>, TON 2013
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/wiopt13-lifeadd.pdf">Life-Add: Lifetime Adjustable Design for WiFi Networks with Heterogeneous Energy Supplies</a>, WiOpt 2013, <b>Best Student Paper</b>
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/asilomar13_smartgrid.pdf">Energy Trading in the Smart Grid: From End-user's Perspective</a>, Asilomar 2013
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/journal/jsac13-renewable.pdf">Heterogenous Delay Tolerant Task Scheduling and Energy Management in the Smart Grid with Renewable Energy</a>, JSAC 2013 (Extended CDC 2012 paper)
-        <li> <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=06195775">A Simple Asymptotically Optimal Energy Allocation and Routing Scheme in Rechargeable Sensor Networks</a>, INFOCOM 2012
-        <li> <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5643974">Perpetual and Fair Data Collection for Environmental Energy Harvesting Sensor Networks</a>, TON 2011
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/infocom11_recharging.pdf">Finite-Horizon Energy Allocation and Routing Scheme in Rechargeable Sensor Networks</a>, INFOCOM 2011
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/infocom10_recharging.pdf">Joint Energy Management and Resource Allocation in Rechargeable Sensor Networks</a>, INFOCOM 2010
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/sensys08.pdf">Steady and Fair Rate Allocation for Rechargeable Sensors in Perpetual Sensor Networks</a>, SENSYS 2008
-        </ul>
-        </ol>
-        <h1>Research Pages on Active Grants</h1>
-        <p>
-        <ul>
-        <li> <a href="http://www.cse.ohio-state.edu/~prasun/green/">NeTS: Medium: Energy Efficient Operation and Control of Green Base Stations with Renewable Energy: Theory to Practice, NSF, Aug 2014 - Jul 2018</a>
-        <li> <a href= "http://www.cse.ohio-state.edu/~prasun/mac/">NeTS: Medium: Collaborative Research: Leveraging Physical Layer Advances for the Next Generation Distributed Wireless Channel Access Protocols, NSF, Sep 2013 - Aug 2016</a>
-        <li> <a href="http://www.cse.ohio-state.edu/~prasun/widespot/">EAGER: WideSpot: Enabling Predictable Wide-Area Coverage over Scattered Hotspots, NSF, Sep 2012 - Aug 2014</a>
-        <li> <a href="http://www.cse.ohio-state.edu/~prasun/femtocells/">NeTS: Medium: Collaborative Research: Enabling Cellular Services over Unplanned Femto-Cell Deployments: From Theory to Implementation, Jun 2012 - May 2015</a>
-        </ul>
-        </p>
-        <h1>My Past contributions are in the following areas:</h1>
-        <p>
-        <ol>
-        <li> Scalable Low Power Sensor Networking
-        <ul>
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/rare.htm">Reporting Rare Events in Sensor Networks</a>
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/anycast.htm">Low Power MAC with Anycasting</a>>
-        </ul>
-        <li> Data Streaming over Wireless Networks
-        <ul>
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/multicast.htm">Scalable Multicast Data Streaming over Wireless Networks</a>
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/backbone.htm">Mesh-based Sensor Network Backbones</a>
-        </ul>
-        <li> Ad-hoc Networking: Architecture and Routing Infrastructure
-        <ul>
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/ucan.htm">Unified Architecture for Ad-hoc and Cellular Networks</a>
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/cedar.htm">CEDAR: Core Extraction based Distributed Ad-hoc Routing</a>
-        </ul>
-        <li> Data Transport over Local Area and Wide-Area Wireless Networks
-        <ul>
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/wifitcp.htm">TCP Fairness over Wireless Local Area Networks</a>
-        <li> <a href="http://web.cse.ohio-state.edu/~prasun/wtcp.htm">WTCP: Wireless Transmission Control Protocol</a>
-        </ul>
-        </ol>
+<h1>Research</h1>
+<p>
+My research focuses on developing alogorithmic solutions to foundational problems in wireless networking. My recent contributions have been focused along the following avenues (click <a href="http://web.cse.ohio-state.edu/~prasun/prasun_research_statement.pdf">here</a> for a detailed research statement):
+<br/>
+<ol>
+<li><b>Empowering Network Access Protocols with Physical Layer Capabilities</b><br/>
+Availability of software-defined-radio (SDR) platforms has made it possible to exploit Physical layer capabilities in MAC and higher layers of the network protocol stack. We are investigating fundamental paradigm shifts in medium-access-control protocol design that leverage such capabilities.
+<br/>
+<ul>
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/mobicom14-bbn.pdf">BBN: Throughput Scaling in Dense Enterprise WLANs with Blind Beamforming and Nulling</a>, MOBICOM 2014
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/mobicom13-symphony.pdf">Symphony: Cooperative Packet Recovery over the Wired Backbone in Enterprise WLANs</a>, MOBICOM 2013
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/hotmobile14_robinhood.pdf">RobinHood: Sharing the Happiness in a Wireless Jungle</a>, HotMobile 2014
+<li> <a href="http://dl.acm.org/ft_gateway.cfm?id=2535401&ftid=1415580&dwn=1&CFID=406749014&CFTOKEN=41455512">DOMINO: Relative Scheduling in Enterprise Wireless LANs</a>, CoNEXT 2013
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/icnp13_rctc.pdf">RCTC: Rapid Concurrent Transmission Coordination in Full Duplex Wireless Networks</a>, ICNP 2013
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/mobicom11-duplex.pdf">Practical, Real-time Full Duplex Wireless</a>, MOBICOM 2011
+</ul>
+<li><b>Vehicles as First Class Citizens of Tomorrow's Internet</b><br/>
+We are exploring a wide variety of fundamental problems related to vehicle-to-infrastructure (V2I) communication and vehicle-to-vehicle (V2V) communication.
+<ul>
+<li> Ensuring Predictable Contact Opportunity for Scalable Vehicular Internet Access On the Go, TON 2014
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/infocom14-foresight.pdf">ForeSight: Mapping Vehicles in Visual Domain and Electronic Domain and Electronic Domain</a>, INFOCOM 2014
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/journal/tmc13_rbtp.pdf">RBTP: Low Power Mobile Discovery Protocol through Recursive Binary Time Partitioning</a>, TMC 2014
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/mobicom12.pdf">MARVEL: Multiple Antenna based Relative Vehicle Localizer</a>, MOBICOM 2012
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/mobicom12-demo.pdf">Demo Abstract: MARVEL: Multiple Antenna based Relative Vehicle Localizer</a>, MOBICOM 2012
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/infocom10_contact.pdf">Maximizing the Contact Opportunity for Vehicular Internet Access</a>, INFOCOM 2010
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/infocom09_trap.pdf">Trap Coverage: Bounding the Interconnection Gap for Vehicular Internet Access</a>, INFOCOM 2009
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/infocom09_alpha.pdf">Alpha Coverage: Bounding the Interconnection Gap for Vehicular Internet Access</a>, INFOCOM Mini-Conference 2009
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/demo/sensys09-demo.pdf">Demo Abstract: An Affordable, Long-Lasting, and Autonomous Theft Detection and Tracking System</a>, SENSYS 2009
+</ul>
+<li><b>Smart Use of Renewable Energy: Networking and Beyond</b><br/>
+The need to operate perpetually in remote deployments and to reduce the carbon footprint of communication devices, a number of new applications of renewable energy have recently emerged. My work has explored the challenges and the potential of harnessing the renewable energy in the most efficient way for sensor networks and smart grids.
+<br/>
+<ul>
+<li> <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=06195775">A Simple Asymptotically Optimal Joint Energy Allocation and Routing Scheme in Rechargeable Sensor Networks</a>, TON 2013
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/wiopt13-lifeadd.pdf">Life-Add: Lifetime Adjustable Design for WiFi Networks with Heterogeneous Energy Supplies</a>, WiOpt 2013, <b>Best Student Paper</b>
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/asilomar13_smartgrid.pdf">Energy Trading in the Smart Grid: From End-user's Perspective</a>, Asilomar 2013
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/journal/jsac13-renewable.pdf">Heterogenous Delay Tolerant Task Scheduling and Energy Management in the Smart Grid with Renewable Energy</a>, JSAC 2013 (Extended CDC 2012 paper)
+<li> <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=06195775">A Simple Asymptotically Optimal Energy Allocation and Routing Scheme in Rechargeable Sensor Networks</a>, INFOCOM 2012
+<li> <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5643974">Perpetual and Fair Data Collection for Environmental Energy Harvesting Sensor Networks</a>, TON 2011
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/infocom11_recharging.pdf">Finite-Horizon Energy Allocation and Routing Scheme in Rechargeable Sensor Networks</a>, INFOCOM 2011
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/infocom10_recharging.pdf">Joint Energy Management and Resource Allocation in Rechargeable Sensor Networks</a>, INFOCOM 2010
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/publications/conf/sensys08.pdf">Steady and Fair Rate Allocation for Rechargeable Sensors in Perpetual Sensor Networks</a>, SENSYS 2008
+</ul>
+</ol>
+<h1>Research Pages on Active Grants</h1>
+<p>
+<ul>
+<li> <a href="http://www.cse.ohio-state.edu/~prasun/green/">NeTS: Medium: Energy Efficient Operation and Control of Green Base Stations with Renewable Energy: Theory to Practice, NSF, Aug 2014 - Jul 2018</a>
+<li> <a href= "http://www.cse.ohio-state.edu/~prasun/mac/">NeTS: Medium: Collaborative Research: Leveraging Physical Layer Advances for the Next Generation Distributed Wireless Channel Access Protocols, NSF, Sep 2013 - Aug 2016</a>
+<li> <a href="http://www.cse.ohio-state.edu/~prasun/widespot/">EAGER: WideSpot: Enabling Predictable Wide-Area Coverage over Scattered Hotspots, NSF, Sep 2012 - Aug 2014</a>
+<li> <a href="http://www.cse.ohio-state.edu/~prasun/femtocells/">NeTS: Medium: Collaborative Research: Enabling Cellular Services over Unplanned Femto-Cell Deployments: From Theory to Implementation, Jun 2012 - May 2015</a>
+</ul>
+</p>
+<h1>My Past contributions are in the following areas:</h1>
+<p>
+<ol>
+<li> Scalable Low Power Sensor Networking
+<ul>
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/rare.htm">Reporting Rare Events in Sensor Networks</a>
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/anycast.htm">Low Power MAC with Anycasting</a>>
+</ul>
+<li> Data Streaming over Wireless Networks
+<ul>
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/multicast.htm">Scalable Multicast Data Streaming over Wireless Networks</a>
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/backbone.htm">Mesh-based Sensor Network Backbones</a>
+</ul>
+<li> Ad-hoc Networking: Architecture and Routing Infrastructure
+<ul>
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/ucan.htm">Unified Architecture for Ad-hoc and Cellular Networks</a>
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/cedar.htm">CEDAR: Core Extraction based Distributed Ad-hoc Routing</a>
+</ul>
+<li> Data Transport over Local Area and Wide-Area Wireless Networks
+<ul>
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/wifitcp.htm">TCP Fairness over Wireless Local Area Networks</a>
+<li> <a href="http://web.cse.ohio-state.edu/~prasun/wtcp.htm">WTCP: Wireless Transmission Control Protocol</a>
+</ul>
+</ol>
 </div>
-
-  </div>
-
-</body>
-</html>
