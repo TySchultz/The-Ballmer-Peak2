@@ -168,12 +168,12 @@ li {
 }
 
 .leftColumn {
-	margin-bottom: 20.5em;
+	margin-bottom: 23.5em;
 	width: 15em;
 }
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 40.5em ) {
   .leftColumn { left: 0; top: 0; width:15.5em;}
-  .rightColumn { position: absolute; top: 0; margin-top: 5em; margin-right: 5em;  margin-left: 15.0em; }   
+  .rightColumn { position: absolute; top: 0; margin-top: 5em; margin-right: 7em;  margin-left: 15.0em; }   
 }
