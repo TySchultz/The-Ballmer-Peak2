@@ -54,6 +54,7 @@ h2.header {
     left: 2.25em;
     position: relative;
     top: .1em;
+    text-align:right;
 }
 
 #logo {
@@ -75,8 +76,6 @@ a {
 
 #nav a {
     border-radius: 40px;
-    display: block;
-    float: right;
     color: #444;
     font-family: 'Open Sans', sans-serif; font-weight: 400; 
     font-size: 13pt;
