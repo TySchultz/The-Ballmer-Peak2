@@ -1,0 +1,10 @@
+.button {
+	text-align:center;
+	vertical-align:middle;
+	font-size:2em;
+}
+
+#display {
+	text-align:right;
+	font-size:2em;
+}
