@@ -1,27 +1,88 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="calc.css">
-		<script src="jquery.js"></script>
-		<script src="calc.js"></script>
-	</head>
-	<body>
-		<table id="calculator" border="1">
-			<tr>
-				<td id="display" colspan="3"></td>
-			</tr>
-			<tr>
-				<td class="button digit">1</td>
-				<td class="button digit">2</td>
-				<td class="button digit">3</td>
-			</tr>
-			<tr>
-				<td class="button operator">+</td>
-				<td class="button operator">-</td>
-				<td class="button operator">*</td>
-			</tr>
-			<tr>
-				<td colspan="3" class="button" id="enter">=</td>
-			</tr>
-		</table>
-	</body>
+<head>
+</head>
+
+<body align="center">
+
+<table align="center" width="500px"  >
+
+<tr>
+<td align="center" width="500px" colspan="5"><div id="display_B" class="display"></div></td>
+</tr>
+<tr>
+<td align="center" width="500px" colspan="5"><div id="display_A" class="display">0</div></td>
+</tr>
+<tr>
+<td width="100px"><div id="MS_Button" class="memoryFunction" onclick="memStore()">MS</div></td>
+<td width="100px"><div id="MR_Button" class="memoryFunction" onclick="memRecall()">MR</div></td>
+<td width="100px"><div id="M+_Button" class="memoryFunction" onclick="memPlus()">M+</div></td>
+<td width="100px"><div  id="C_Button" class="memoryFunction" onclick="clearDisplay()">C</div></td>
+<td width="100px"><div id="CM_Button" class="memoryFunction" onclick="clearMem()">CM</div></td>
+</tr>
+<tr>
+<td colspan="3">
+
+<table >
+<tr>
+  <td width="100px"><div id="seven_Button" class="digit" onclick="addDigit('7')">7</div></td>
+  <td width="100px"><div id="eight_Button" class="digit" onclick="addDigit('8')">8</div></td>
+  <td width="100px"><div id="nine_Button" class="digit" onclick="addDigit('9')">9</div></td>
+</tr>
+<tr>
+  <td width="100px"><div id="four_Button" class="digit" onclick="addDigit('4')">4</div></td>
+  <td width="100px"><div id="five_Button" class="digit" onclick="addDigit('5')">5</div></td>
+  <td width="100px"><div id="six_Button" class="digit" onclick="addDigit('6')">6</div></td>
+</tr>
+<tr>
+  <td width="100px"><div id="one_Button" class="digit" onclick="addDigit('1')">1</div></td>
+  <td width="100px"><div id="two_Button" class="digit" onclick="addDigit('2')">2</div></td>
+  <td width="100px"><div id="tree_Button" class="digit" onclick="addDigit('3')">3</div></td>
+</tr>
+<tr>
+  <td colspan="2"><div id="zero_Button" class="digit" onclick="addDigit('0')">0</div></td>
+  <td><div id="decimalPoint" class="digit" onclick="addPoint()">.</div></td>
+
+</tr>
+</table>
+
+
+</td>
+<td colspan="2">
+
+<table>
+<tr>
+  <td width="100px">
+    <div id="addition_Button" class="arithmeticFunction" onclick="addOperator('+')">+</div>
+  </td>
+  <td width="100px">
+    <div id="subtraction_Button" class="arithmeticFunction" onclick="addOperator('-')">-</div>
+  </td>
+</tr>
+<tr>
+  <td width="100px">
+    <div id="multiplication_Button" class="arithmeticFunction" onclick="addOperator('*')">*</div>
+  </td>
+  <td width="100px">
+    <div id="division_Button" class="arithmeticFunction" onclick="addOperator('/')">/</div>
+  </td>
+</tr>
+<tr>
+  <td width="100px">
+    <div id="EXP_Button" class="arithmeticFunction">exp</div>
+  </td>
+  <td width="100px">
+    <div id="SQR_Button" class="arithmeticFunction" onclick="squareRoot()">sqr</div>
+  </td>
+</tr>
+<tr>
+  <td width="200px" colspan="2">
+    <div id="Equal_Button" class="arithmeticFunction" onclick="evalStr()">=</div>
+  </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
 </html>
