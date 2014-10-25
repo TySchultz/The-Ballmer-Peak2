@@ -1,10 +1,87 @@
-.button {
-	text-align:center;
-	vertical-align:middle;
-	font-size:2em;
+body
+{
+text-align:center; 
+font-family:Arial ;
+}
+table, td, th
+{
+padding:0;
+border:none;
+	
+}
+td
+{
+height:40px;
 }
 
-#display {
-	text-align:right;
-	font-size:2em;
+
+.digit
+{
+margin-top: 5px;
+background-color:#B8B8B8;
+height:100%;
+padding-top:10px;
+text-align: center;
+}
+.digit:hover
+{
+background-color:#999999;
+font-weight: bold;
+color:#FFFFFF;
+
+}
+
+
+.memoryFunction
+{
+margin-top: 5px;
+background-color:#B8B8B8;
+height:100%;
+padding-top:10px;
+text-align: center;
+}
+.memoryFunction:hover
+{
+background-color:#999999;
+font-weight: bold;
+color:#FFFFFF;
+}
+
+.arithmeticFunction
+{
+margin-top: 5px;
+background-color:#B8B8B8;
+height:100%;
+padding-top:10px;
+text-align: center;
+}
+.arithmeticFunction:hover
+{
+background-color:#999999;
+
+font-weight: bold;
+color:#FFFFFF;
+
+}
+
+
+.display
+{
+background-color:#E6E6E6;
+height:100%;
+padding-top:10px;
+padding-right:10px;
+font-size:25px;
+font-family:Courier New;
+text-align:right;
+
+}
+
+#Equal_Button
+{
+background-color:#FFAD33;
+}
+#Equal_Button:hover
+{
+background-color:#FF9900;
 }
