@@ -17,7 +17,7 @@ function addDigit(digit) {
 	}
 }
 function addOperator(opToAdd){
-	if (isOperator() == -1)
+	if (isOperator() == -1  && numberStr_A.length<31)
     {
       numberStr_A=numberStr_A.concat(opToAdd);
     }
