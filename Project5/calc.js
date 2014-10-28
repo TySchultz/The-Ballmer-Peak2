@@ -39,8 +39,6 @@ function squareRoot(){
     {
       numberStr_B = Math.pow(eval(numberStr_A), 0.5);
       display();
-    }else if(isCurrentExponent){
-
     }
 }
 function exponent(){
@@ -80,7 +78,9 @@ function clearDisplay(){
 	numberStr_A="0";
 	numberStr_B="";
 	decimalPoint=true;
+  isCurrentExponent = false;
 	display();
+
 }
 function memPlus()
 {
