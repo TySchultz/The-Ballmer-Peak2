@@ -2,8 +2,13 @@ var mem = 0; // stored value
 var numberStr_A="0";
 var numberStr_B ="";
 decimalPoint=true;
+var isCurrentExponent = false;
 function addDigit(digit) {
-	if(numberStr_A.length<31)
+  if (isCurrentExponent) {
+      numberStr_A = [numberStr_A.slice(0, numberStr_A.length-1), digit, numberStr_A.slice(numberStr_A.length-1)].join('');
+      display();
+  }
+  else if(numberStr_A.length<31)
 	{
 		if(numberStr_A=="0")
 		{
@@ -17,10 +22,15 @@ function addDigit(digit) {
 	}
 }
 function addOperator(opToAdd){
-	if (isOperator() == -1  && numberStr_A.length<31)
-    {
-      numberStr_A=numberStr_A.concat(opToAdd);
-    }
+  if (isCurrentExponent) {
+    numberStr_A=numberStr_A.concat(opToAdd);
+    isCurrentExponent = false;
+    display();
+  }
+  else if (isOperator() == -1  && numberStr_A.length<31)
+  {
+    numberStr_A=numberStr_A.concat(opToAdd);
+  }
     display();
 }
 function squareRoot(){
@@ -29,6 +39,33 @@ function squareRoot(){
     {
       numberStr_B = Math.pow(eval(numberStr_A), 0.5);
       display();
+    }else if(isCurrentExponent){
+
+    }
+}
+function exponent(){
+    // if it there is not an operator before
+    if (isOperator() == -1)
+    {
+      var length = numberStr_A.length;
+      var splitPosition = 0;
+
+
+      for (var i = 0; i < numberStr_A.length-1; i++) {
+
+          var character = numberStr_A.charAt(i);
+
+          if (character == "+" || character == "-" || character == "/" || character == "*" || character == ")") {
+              splitPosition = i;
+          };
+      }
+      if (splitPosition == 0) {
+        numberStr_A = "Math.pow(" + numberStr_A + ",)";
+      }else{
+        numberStr_A = numberStr_A.substring(0,splitPosition+1) + "Math.pow(" + numberStr_A.substring(splitPosition+1,length) + ",)";
+      };
+      display();
+      isCurrentExponent = true;
     }
 }
 function addPoint(){
@@ -69,7 +106,7 @@ function isOperator(){
   	var isOp = 0;
     var lengthStr = numberStr_A.length;
     // if the char before is an operator, return -1
-    if (numberStr_A.charAt(lengthStr-1) != "+" && numberStr_A.charAt(lengthStr-1) != "-" && numberStr_A.charAt(lengthStr-1) != "/" && numberStr_A.charAt(lengthStr-1) != "*" )
+    if (numberStr_A.charAt(lengthStr-1) != "+" && numberStr_A.charAt(lengthStr-1) != "-" && numberStr_A.charAt(lengthStr-1) != "/" && numberStr_A.charAt(lengthStr-1) != "*" && numberStr_A.charAt(lengthStr-1) != ")"  )
     {
       isOp = -1;
     }
