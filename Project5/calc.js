@@ -4,7 +4,7 @@ var numberStr_B ="";
 decimalPoint=true;
 var isCurrentExponent = false;
 function addDigit(digit) {
-  if (isCurrentExponent) {
+  if (isCurrentExponent && numberStr_A.length<31) {
       numberStr_A = [numberStr_A.slice(0, numberStr_A.length-1), digit, numberStr_A.slice(numberStr_A.length-1)].join('');
       display();
   }
