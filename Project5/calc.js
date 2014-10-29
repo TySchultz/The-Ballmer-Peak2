@@ -42,6 +42,9 @@ function squareRoot(){
     }
 }
 function exponent(){
+// must not allow exponent operation if will result in overflow
+if (numberStr_A.length<(21))
+  {
     // if it there is not an operator before
     if (isOperator() == -1)
     {
@@ -55,16 +58,17 @@ function exponent(){
 
           if (character == "+" || character == "-" || character == "/" || character == "*" || character == ")") {
               splitPosition = i;
-          };
+          }
       }
       if (splitPosition == 0) {
         numberStr_A = "Math.pow(" + numberStr_A + ",)";
       }else{
         numberStr_A = numberStr_A.substring(0,splitPosition+1) + "Math.pow(" + numberStr_A.substring(splitPosition+1,length) + ",)";
-      };
+      }
       display();
       isCurrentExponent = true;
     }
+  }
 }
 function addPoint(){
 	if(decimalPoint)
